@@ -2,14 +2,14 @@ import {useStyles} from '@lomray/react-native-responsive';
 import React from 'react';
 import {SafeAreaView, StatusBar, View} from 'react-native';
 import Section from '../section';
-import stylesCommon from './styles';
+import stylesheet from './styles';
 
 /**
  * App
  * @constructor
  */
 const App = () => {
-  const styles = useStyles(stylesCommon);
+  const styles = useStyles(stylesheet, {isWhite: true});
 
   return (
     <SafeAreaView style={styles.wrapper}>

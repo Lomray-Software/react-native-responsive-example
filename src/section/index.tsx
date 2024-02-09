@@ -1,7 +1,7 @@
 import {useStyles} from '@lomray/react-native-responsive';
 import React, {FC} from 'react';
 import {Text, View} from 'react-native';
-import stylesCommon from './styles';
+import stylesheet from './styles';
 
 interface ISection {
   title: string;
@@ -12,7 +12,7 @@ interface ISection {
  * @constructor
  */
 const Section: FC<ISection> = ({title}) => {
-  const styles = useStyles(stylesCommon);
+  const styles = useStyles(stylesheet);
 
   return (
     <View style={styles.section}>
